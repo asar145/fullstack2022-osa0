@@ -1,0 +1,6 @@
+title Uusi muistiinpano single page app kaavio
+
+Selain->Palvelin: HTTP POST new note spa
+note left of Selain: Uusi note lisätään selaimen notes \n olioon ja näkymä renderöidään uudestaan
+Palvelin-->Selain: status 201, message: note created
+note right of Palvelin: Uusi note lisätään palvelimen notes olioon

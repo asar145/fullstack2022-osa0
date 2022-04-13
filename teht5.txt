@@ -1,0 +1,13 @@
+title single page app sivun lataus kaavio
+
+Selain->Palvelin: HTTP GET spa
+Palvelin-->Selain: spa sivun HTML-koodi
+Selain->Palvelin: HTTP GET main.css
+Palvelin-->Selain: main.css
+Selain->Palvelin: HTTP GET spa.js
+Palvelin-->Selain: spa.js
+note left of Selain: js koodi pyytää json datan
+Selain->Palvelin: HTTP GET data.json
+Palvelin-->Selain: json data
+Selain->Palvelin: HTTP GET favicon.ico
+Palvelin-->Selain: response body has <a href="/stats">Course stats</a>

@@ -1,0 +1,16 @@
+title Uusi muistiinpano kaavio
+
+Selain->Palvelin: HTTP POST new note
+note right of Palvelin: Uusi note lisätään POST pyynnön \n rungosta palvelimen notes olioon
+Palvelin->Selain: Redirect to notes
+Selain->Palvelin: HTTP GET notes
+Palvelin-->Selain: notes sivun HTML-koodi
+Selain->Palvelin: HTTP GET main.css
+Palvelin-->Selain: main.css
+Selain->Palvelin: HTTP GET main.js
+Palvelin-->Selain: main.js
+note left of Selain: js koodi pyytää json datan
+Selain->Palvelin: HTTP GET data.json
+Palvelin-->Selain: json data
+Selain->Palvelin: HTTP GET favicon.ico
+Palvelin-->Selain: response body has <a href="/stats">Course stats</a>
